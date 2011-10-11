@@ -1,0 +1,16 @@
+<html>
+
+ <body bgcolor='#33A18D'>
+<h1>Welcome to BestBay Registration Page</h1>
+<p>The best auction site on the planet!!!</p>
+
+
+<%= form_for :customer do |f| %>
+username: <%= f.text_field :username %><br />
+password: <%= f.password_field :password %><br />
+confirm password: <%= f.password_field :password_confirmation %><br />
+<%= submit_tag "register" %>
+
+<% end %>
+    </body>
+   </html>
